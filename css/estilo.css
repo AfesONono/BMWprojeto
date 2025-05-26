@@ -1,0 +1,217 @@
+
+/* TOPO */
+body{
+    font-family: "Inter Tight", sans-serif;
+    font-family: "PT serif", serif;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+}
+/* Títulos */
+h1,
+h2,
+h3{
+  font-family: Asap, sans-serif;
+  color: rgba(0, 0, 0, 0.989);
+  text-align: center;
+}
+/* Navegação (MENUS) */
+nav {
+  background-color: rgb(0, 0, 0);
+}
+nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+}
+nav div a{
+  color: white;
+  text-decoration: none;
+}
+
+nav div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+nav div ul li{
+  text-align: center;
+  width: 100%;
+}
+nav div ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 9.5px 0;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+nav div ul li a:hover{
+color: black;
+transition: color 0.5s;
+background-color: white;
+transition: background-color 0.5s;
+border-style: 1px solid ;
+}
+
+/* Imagens */
+nav div.pai {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+nav div.pai div{
+  margin: 30px;
+}
+
+/* Cabeçalho */
+header{
+  background-image: url(/images/bumblebee.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 126px;
+}
+header h2{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  font-size: 130%;
+  background-color: rgba(0, 0, 0, 0.556);
+  border: 4px rgba(0, 0, 0, 0.755);
+  border-radius: 50px;
+}
+/* Seções */
+section#modelos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+section#modelos .veiculosfotos{
+width: 80%;
+}
+/* section#modelos .veiculosfotos:hover{
+-webkit-transform: scale(1.2);
+transform: scale(1.2);
+margin: 40px;
+width: 85%; */
+/* } */
+section#modelos div button{
+  width: 200%;
+  max-height: 220px;
+  max-width: 300px;
+  font-size: 30px;
+  font-display: flex;
+  margin: 10px;
+  height: 65px;
+  border-color: 10px solid black;
+}
+
+section#modelos div button:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  margin: 10px;
+}
+section#modelos div p{
+justify-content: baseline;
+display: flex;
+}
+section#modelos div p img{
+  justify-content: baseline;
+  display: flex;
+  padding: 0px 2px 0px 10px;
+}
+/* Footer - Rodapé */
+footer{
+  color: black;
+}
+
+footer h3{
+color: white;
+margin-top: 40px;
+}
+footer .pai2{
+  padding-top: 0.02px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+}
+footer .pai2 a{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Responsividade do site para computadores */
+@media screen and (min-width: 768px) {
+  nav{
+    flex-direction: initial;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    padding: 0px 10px 0px 0px;
+    align-items: end;
+  }
+    nav div {
+      width: 1000px;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 1000px;
+    }
+    nav div ul {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 70%;
+    }
+      /* Imagem Logo*/
+      nav div a img{
+        width: 89%;
+      }
+      /* Imagem do perfil e barra de pesquisa */
+      nav div.pai{
+        width: 30%;
+        flex-direction: row;
+        display: flex;
+        position: relative;
+    }
+    /* Cabeçalho */
+    header {
+      height: 100px;
+      justify-content: center;
+      background-size: 100%;
+      min-height: 560px;
+  }
+  header h2{
+    margin-top: 20%;
+    font-size: 90px;
+  }
+  /* section#modelos .veiculosfotos:hover{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0); */
+  footer h3{
+    display: flex;
+  }
+  footer .pai2{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  footer div img{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    padding: 50px 0;
+  }
+}
